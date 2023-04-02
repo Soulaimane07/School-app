@@ -1,0 +1,348 @@
+.homeworks {
+    border-radius: 8px;
+    
+    background: rgba(255, 255, 255, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    margin: 2%;
+    margin-top: 7%;
+    padding: 40px;
+}
+
+.homeworks .body {
+    display: table;
+    width: 100%;
+    text-align: center;
+    min-height: 70vh;
+}
+
+.homeworks .controls {
+    margin-bottom: 40px;
+    text-align: left;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+}
+.homeworks .controls .subjects,.homeworks .controls .stat {
+    display: flex;
+    align-items: center;
+}
+.homeworks .controls .subjects {
+    margin-right: 30px;
+}
+.controls span {
+    opacity: 50%;
+    margin-right: 20px;
+}
+
+.homeworks .class {
+    text-align: left;
+    display: inline-block;
+    background-color: rgb(234, 234, 234);
+    margin: 0 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 26%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+
+    animation-duration: 1s;
+    animation-name: class;
+    }
+      @keyframes class {
+        from {
+            margin-top: -100px;
+            opacity: 0%;
+        }
+        
+        to {
+            opacity: 100%;
+        }
+    }
+.homeworks .class:hover {
+    border-color: rgba(220, 20, 60, 0.511);
+}
+.homeworks .class .title {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.homeworks .class .subject {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.homeworks .class .time, .details .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 60%;
+    font-size: 14px;
+}
+.homeworks .class .time .border, .details .time .border {
+    background-color: black;
+    height: 1px;
+    width: 46%;
+    opacity: 30%;
+}
+
+.homeworks .class .stat {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.stat .icon {
+    font-size: 20px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+}
+
+
+.homeworks .class.undone:hover {
+    border-color: crimson;
+}
+.homeworks .class.done:hover {
+    border-color: rgb(6, 159, 16);
+}
+
+.homeworks .class.undone.active, .details .buttons button.undone:hover, .homeworks .details .header button:hover, .details .buttons button:hover {
+    border-color: crimson;
+}
+.homeworks .class.done.active, .details .buttons button.done:hover {
+    border-color: rgb(6, 159, 16);
+}
+
+.homeworks .class.undone .stat {
+    color: crimson;
+}
+.homeworks .class.done .stat {
+    color: rgb(6, 159, 16);
+}
+
+.homeworks .details .stat.undone, .details .buttons button.undone:hover, .homeworks .details .header button:hover, .details .buttons button:hover {
+    background-color: rgba(220, 20, 60, 0.196);
+    color: crimson;
+}
+.homeworks .details .stat.done, .details .buttons button.done:hover {
+    background-color: rgba(6, 159, 16, 0.163);
+    color: rgb(6, 159, 16);
+}
+
+.details .buttons button.undone {
+    background-color: crimson;
+}
+.details .buttons button.done {
+    background-color: rgb(1, 149, 11);
+}
+
+
+
+
+.homeworks .details {
+    background-color: #FAFBFB;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 50%;
+    width: 24%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: -20px 10px 40px rgba(0, 0, 0, 0.118);
+    overflow: hidden;
+
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    }
+      @keyframes slidein {
+        from {
+            right: -100px;
+            opacity: 00%;
+        }
+        
+        to {
+            opacity: 100%;
+        }
+      }
+.homeworks .details .header {
+    font-size: 20px;
+}
+.homeworks .details .header .title {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+.homeworks .details .header .title span {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.homeworks .details .header button {
+    background: none;
+    font-size: 20px;
+    display: flex;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+    border: 1px solid transparent;
+}
+.homeworks .details .stat {
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+
+
+.homeworks .details .body {
+    min-height: 60vh;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.details .body .image {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    opacity: 50%;
+}
+
+
+.homeworks .details .buttons {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.233);
+    margin-left: -20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.details .buttons button {
+    padding: 10px 0;
+    margin: 10px 10px;
+    width: 94%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: 300ms;
+    cursor: pointer;
+    justify-content: center;
+}
+.details .buttons .icon {
+    display: flex;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.details table {
+    margin-top: 20px;
+    width: 100%;
+}
+.details table tr th,.details table tr td {
+    padding: 10px 0;
+}
+.details table tr th {
+    opacity: 50%;
+}
+
+
+
+
+
+
+.create.details {
+    overflow: visible;
+}
+.create.details .header .title {
+    font-size: 20px;
+    opacity: 80%;
+}
+
+.create.details .body {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    overflow-y: scroll;
+    height: 110px;
+}
+.create.details .body::-webkit-scrollbar {
+    width: 6px;
+}
+.create.details .body::-webkit-scrollbar-track {
+    border-radius: 80px;
+}
+  
+ .create.details .body  .boooox {
+    display: grid;
+    margin: 0 14px;
+    margin-bottom: 16px;
+}
+.create.details .body  .boooox:last-child {
+    margin-bottom: 20vh;
+}
+.create.details .body  label {
+    opacity: 60%;
+    margin-bottom: 6px;
+}
+.create.details .body .input {
+    padding: 7px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.149);
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+.create.details .body .creator {
+    display: flex;
+    align-items: center;
+}
+.create.details .body .image {
+    width: 32px;
+    height: 32px;
+    opacity: 100%;
+    border-radius: 100%;
+    margin: 0;
+    margin-right: 10px;
+    border-width: 1px;
+}
+
+.details .buttons button {
+    background-color: crimson;
+}
+
+
+.imagebox {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+}

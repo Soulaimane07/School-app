@@ -1,0 +1,100 @@
+.nav {
+    width: 14%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-weight: bold;
+}
+.nav .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 80%;
+}
+.nav .links {
+    padding: 0 10px;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .links:hover::-webkit-scrollbar {
+    opacity: 100%;
+    display: inline;
+  }
+  .links::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  .links::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  .links::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.573);
+    border-radius: 10px;
+  }
+  .nav .navitem {
+    margin-bottom: 10px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+    transition: all 300ms;
+    opacity: 50%;
+  }
+  .navitem:last-child {
+    margin-bottom: 50vh;
+  }
+  .nav .navitem:hover {
+    color: crimson;
+    opacity: 100%;
+  }
+  .nav .activeitem {
+    background-color: rgba(220, 20, 60, 0.11);
+    border-left: 4px solid crimson;
+    color: crimson;
+    opacity: 100%;
+  }
+  .navitem .icon {
+    font-size: 25px;
+    padding: 0;
+    margin-right: 10px;
+  }
+  
+
+
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 26px;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+.clock .day {
+  margin: 0 10px;
+}
+.clock .day, .clock .icon {
+  opacity: 50%;
+}
+.clock .icon {
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+}

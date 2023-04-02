@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.header .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.header .options {
+    display: flex;
+    list-style: none;
+    padding: 5px 4px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(225, 224, 224);
+}
+.header .options li {
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 100ms;
+}
+.header .options li:hover {
+    color: crimson;
+}
+.header .options .active {
+    background-color: crimson;
+    color: white;
+}
+.header .options .active:hover {
+    background-color: crimson;
+    color: white;
+} 
+
+
+.header .add {
+    background-color: rgb(220, 20, 60);
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 200ms;
+}
+.header .add:hover {
+    background: #F7E1E7;
+    color: crimson;
+    border-color: crimson;
+}
+.header .add span {
+    display: flex;
+    font-size: 20px;
+    margin-left: 15px;
+}

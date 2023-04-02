@@ -1,0 +1,30 @@
+.headerTo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: all 300ms;
+    color: black;
+}
+.headerTo:hover {
+    box-shadow: 0 0px 50px rgba(0, 0, 0, 0.174);
+    background-color: rgba(220, 20, 60, 0.259);
+    color: crimson;
+}
+.headerTo:hover button {
+    color: crimson;
+    display: flex;
+}
+.headerTo h4 {
+    opacity: 80%;
+}
+.headerTo button {
+    padding: 0;
+    background: none;
+    font-size: 24px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    opacity: 60%;
+    transition: all 300ms;
+}

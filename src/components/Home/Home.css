@@ -1,0 +1,95 @@
+.home {
+    height: 100vh;
+    border-radius: 8px;
+    
+    background: rgba(255, 255, 255, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    margin: 2%;
+    margin-top: 7%;
+    padding: 40px;
+}
+  
+.boxes {
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+}
+.boxx {
+    width: 24%;
+}
+.box {
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: all 300ms;
+}
+.box .icon {
+    font-size: 36px;
+    margin-right: 16px;
+    display: flex;
+    padding: 5px;
+}
+.box .number {
+    font-weight: bold;
+    font-size: 30px;
+}
+.box .title {
+    opacity: 60%;
+    font-size: 14px;
+}
+
+
+.today {
+    background-color: rgba(240, 240, 240, 0.615);
+    width: 20%;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.today .body {
+    padding: 0 20px;
+    padding-top: 10px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+
+
+.today .body::-webkit-scrollbar, .homehomeworks .body::-webkit-scrollbar {
+    width: 6px;
+}
+.today .body::-webkit-scrollbar-track, .homehomeworks .body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+.today .body::-webkit-scrollbar-thumb, .homehomeworks .body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+}
+
+
+
+.today .todaybox {
+    margin-bottom: 20px;
+}
+.today .title {
+    margin: 4px 0;
+    opacity: 50%;
+}
+.today .plan {
+    padding: 20px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    opacity: 80%;
+    font-weight: bold;
+}
+.today .plan.empty {
+    opacity: 40%;
+}

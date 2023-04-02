@@ -1,0 +1,88 @@
+.topbar {
+    background: rgba(255, 255, 255, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-radius: 8px;
+    padding: 6px 20px;
+    
+    position: fixed;
+    width: 79.8%;
+    right: 1.7%;
+
+    z-index: 1;
+}
+
+
+
+.topbar .profile {
+    background-color: rgba(220, 20, 60, 0.195);
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    color: crimson;
+    font-size: 16px;
+}
+.topbar .profile .image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-width: 1px;
+}
+
+
+
+.topbar .right {
+    display: flex;
+    align-items: center;
+}
+.topbar .logout {
+    background: none;
+    margin-left: 20px;
+    padding: 10px 12px;
+    font-size: 20px;
+    display: flex;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: all 500ms;
+    border: 1px solid transparent;
+    color: black;
+    opacity: 60%;
+}
+.topbar .logout:hover {
+    background-color: rgba(220, 20, 60, 0.195);
+    color: crimson;
+    border-color: crimson;
+    opacity: 100%;
+}
+.search-box {
+    display: flex;
+    padding: 6px;
+    border-radius: 8px;
+    align-items: center;
+    border: 2px solid #1d35575a;
+}
+.search-box .button {
+    font-size: 20px;
+    padding: 0 4px;
+    display: flex;
+}
+.search-box input {
+    padding: 5px 10px;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+}
+.search-box input::placeholder {
+    color: rgba(0, 0, 0, 0.729);
+}

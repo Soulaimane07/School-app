@@ -1,0 +1,38 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.app {
+  background-color: #F6F7F8;
+}
+.content {
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 100vh;
+
+  padding-top: 20px;
+  margin-left: 14%;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b1b8ae6a;
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+  border: solid white;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.393);
+  border-radius: 10px;
+}
