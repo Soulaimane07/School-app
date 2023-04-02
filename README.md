@@ -1,4 +1,4 @@
-<h1> School-app </h1>
+<h1> School Website </h1>
 
-==> https://stupendous-gelato-fe8800.netlify.app
+Link: https://stupendous-gelato-fe8800.netlify.app
  
